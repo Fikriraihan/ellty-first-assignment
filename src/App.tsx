@@ -10,9 +10,17 @@ const checkboxStyle = {
 };
 
 function App() {
-  const pages = ["Page 1", "Page 2", "Page 3", "Page 4", "Page 5", "Page 6"];
-  const [selectedPages, setSelectedPages] = useState(["Page 1"]);
-  const [selectAll, setSelectAll] = useState(false);
+  const pages: string[] = [
+    "Page 1",
+    "Page 2",
+    "Page 3",
+    "Page 4",
+    "Page 5",
+    "Page 6",
+  ];
+
+  const [selectedPages, setSelectedPages] = useState<string[]>(["Page 1"]);
+  const [selectAll, setSelectAll] = useState<boolean>(false);
 
   const togglePage = (item: string) => {
     if (selectedPages.includes(item)) {
@@ -50,8 +58,8 @@ function App() {
             style={checkboxStyle}
           />
         </div>
-        <div className="border-[.5px] w-[95%] mx-auto border-gray-200" />
-        <div className="py-2 pr-[15px] pl-[22px] flex flex-col gap-4 h-[160px] overflow-auto">
+        <div className="divider" />
+        <div className="py-2 pr-[15px] pl-[22px] flex flex-col gap-4 h-[150px] overflow-auto">
           {pages.map((item) => (
             <div key={item} className="flex justify-between">
               <p>{item}</p>
@@ -65,11 +73,9 @@ function App() {
             </div>
           ))}
         </div>
-        <div className="border-gray-200 border-[.5px] mx-auto w-[95%]" />
+        <div className="divider" />
         <div className="px-[15px] py-[10px]">
-          <button className="bg-[#FFCE22] rounded-[4px] w-full py-3 font-medium">
-            Done
-          </button>
+          <button>Done</button>
         </div>
       </div>
     </main>

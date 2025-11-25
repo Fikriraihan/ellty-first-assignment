@@ -1,9 +1,16 @@
 @import "tailwindcss";
 
 .checkboxContainer {
-  @apply w-[23px] h-[23px] rounded-[6px] appearance-none border-[0.5px] border-gray-300 checked:bg-[#2469F6] checked:border-[#2469F6] cursor-pointer;
+  @apply w-[23px] h-[23px] border-[0.5px] rounded-[6px]
+         cursor-pointer appearance-none border-gray-300 
+        checked:bg-[#2469F6] checked:border-[#2469F6];
+}
+
+.divider {
+  @apply border-[.5px] w-[95%] mx-auto border-gray-200;
 }
 
 button {
-  @apply rounded-lg border border-transparent px-5 py-2.5 text-base font-normal cursor-pointer transition-[border-color] duration-[250ms] hover:opacity-80;
+  @apply bg-[#FFCE22] rounded-[4px] w-full border-0 px-5 py-2.5 cursor-pointer 
+  hover:opacity-80 active:cursor-default;
 }
