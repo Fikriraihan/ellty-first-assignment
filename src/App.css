@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+.checkboxContainer {
+  @apply w-[23px] h-[23px] rounded-[6px] appearance-none border-[0.5px] border-gray-300 checked:bg-[#2469F6] checked:border-[#2469F6] cursor-pointer;
+}
+
+button {
+  @apply rounded-lg border border-transparent px-5 py-2.5 text-base font-normal cursor-pointer transition-[border-color] duration-[250ms] hover:opacity-80;
+}
