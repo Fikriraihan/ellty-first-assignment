@@ -30,7 +30,8 @@
 
 ## 🚀 Demo
 
-Live version:
+Live version:  
+https://fikriraihan.github.io/ellty-first-assignment/
 
 ---
 
